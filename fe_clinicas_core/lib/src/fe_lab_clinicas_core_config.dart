@@ -1,6 +1,9 @@
+import 'package:asyncstate/asyncstate.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
+
+import 'loader/lab_clinicas_loader.dart';
 
 class FeLabClinicasCoreConfig extends StatelessWidget {
   const FeLabClinicasCoreConfig({
@@ -26,10 +29,18 @@ class FeLabClinicasCoreConfig extends StatelessWidget {
       pages: [...pages ?? [], ...pagesBuilders ?? []],
       modules: modules,
       builder: (context, routes, flutterGetItNavObserver) {
-        return MaterialApp(
-          navigatorObservers: [flutterGetItNavObserver],
-          title: title,
-          routes: routes,
+        return AsyncStateBuilder(
+          loader: LabClinicasLoader(),
+          builder: (navigatorObserver) {
+            return MaterialApp(
+              navigatorObservers: [
+                flutterGetItNavObserver,
+                navigatorObserver,
+              ],
+              title: title,
+              routes: routes,
+            );
+          },
         );
       },
     );
