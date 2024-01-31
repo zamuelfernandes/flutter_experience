@@ -6,7 +6,10 @@ final class LabClinicasLoader extends AsyncOverlay {
   LabClinicasLoader()
       : super(
           id: 0,
-          builder: (BuildContext context, AsyncValue<RouteSettings> settings) {
+          builder: (
+            BuildContext context,
+            AsyncValue<RouteSettings> settings,
+          ) {
             return Center(
               child: SizedBox(
                 width: MediaQuery.sizeOf(context).width * .8,
