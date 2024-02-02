@@ -1,0 +1,1 @@
+ C:\\Workspace\\Pessoal\\Flutter\ Experience\\fe_clinicas_self_service\\.dart_tool\\flutter_build\\a46cc77f7da52de710ac4e9637996756\\native_assets.yaml: 
