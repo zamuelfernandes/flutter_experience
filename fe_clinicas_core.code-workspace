@@ -1,0 +1,15 @@
+//TESTE
+{
+  "folders": [
+    {
+      "path": "fe_lab_clinicas_api"
+    },
+    {
+      "path": "fe_clinicas_self_service"
+    },
+    {
+      "path": "fe_lab_clinicas_core"
+    }
+  ],
+  "settings": {}
+}
