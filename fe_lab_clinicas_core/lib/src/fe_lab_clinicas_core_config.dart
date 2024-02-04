@@ -1,4 +1,5 @@
 import 'package:asyncstate/asyncstate.dart';
+import 'package:fe_lab_clinicas_core/src/theme/fe_lab_clinicas_theme.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
@@ -33,6 +34,8 @@ class FeLabClinicasCoreConfig extends StatelessWidget {
           loader: LabClinicasLoader(),
           builder: (navigatorObserver) {
             return MaterialApp(
+              theme: FeLabClinicasTheme.lightTheme,
+              darkTheme: FeLabClinicasTheme.darkTheme,
               navigatorObservers: [
                 flutterGetItNavObserver,
                 navigatorObserver,
