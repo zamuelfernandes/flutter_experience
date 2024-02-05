@@ -8,7 +8,8 @@ class AuthModule extends FlutterGetItModule {
   @override
   List<Bind<Object>> get bindings => [
         Bind.lazySingleton<UserRepository>(
-            (i) => UserRepositoryImpl(restClient: i()))
+          (i) => UserRepositoryImpl(restClient: i()),
+        )
       ];
 
   @override

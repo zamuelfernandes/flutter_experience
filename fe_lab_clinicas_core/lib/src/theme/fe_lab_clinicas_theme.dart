@@ -29,7 +29,7 @@ final class FeLabClinicasTheme {
       floatingLabelStyle: const TextStyle(
         color: blueColor,
         fontSize: 14,
-        fontWeight: FontWeight.w400,
+        fontWeight: FontWeight.w500,
       ),
       enabledBorder: _defautInputBorder,
       focusedBorder: _defautInputBorder,

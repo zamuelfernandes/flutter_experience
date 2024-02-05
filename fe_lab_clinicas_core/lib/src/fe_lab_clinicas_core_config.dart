@@ -34,6 +34,7 @@ class FeLabClinicasCoreConfig extends StatelessWidget {
           loader: LabClinicasLoader(),
           builder: (navigatorObserver) {
             return MaterialApp(
+              debugShowCheckedModeBanner: false,
               theme: FeLabClinicasTheme.lightTheme,
               darkTheme: FeLabClinicasTheme.darkTheme,
               navigatorObservers: [
